@@ -1,7 +1,7 @@
 {
   "name": "surendra-ui-components",
   "author": "Surendra Rawal",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "private": false,
   "description": "Reusable UI components built with React and Ant Design",
   "main": "./dist/index.umd.js",
@@ -12,8 +12,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc && vite build",
-    "prepublishOnly": "npm run build"
+    "build": "vite build && tsc --emitDeclarationOnly"
   },
   "peerDependencies": {
     "antd": "^5.26.6",
@@ -25,9 +24,11 @@
     "@types/react-dom": "^19.1.0",
     "@vitejs/plugin-react": "^4.2.1",
     "rollup-plugin-visualizer": "^5.10.0",
-    "sass": "^1.89.2",
     "terser": "^5.43.1",
     "typescript": "^5.0.4",
     "vite": "^5.2.8"
+  },
+  "dependencies": {
+    "surendra-ui-components": "^1.0.4"
   }
 }
