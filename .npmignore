@@ -1,0 +1,27 @@
+# .npmignore
+
+# Source files
+src/
+
+# Config files
+tsconfig.json
+vite.config.js
+*.config.*
+
+# Development files
+.gitignore
+.npmrc
+.eslintrc
+.prettierrc
+
+# Build artifacts (if you generate them elsewhere)
+dist/types/  # Only if you're using separate type generation
+!dist/index.*  # Keep compiled JS files
+
+# Test files
+__tests__/
+coverage/
+jest.config.js
+
+# Documentation
+/docs

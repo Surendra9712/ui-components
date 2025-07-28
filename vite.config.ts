@@ -13,7 +13,7 @@ export default defineConfig({
     build: {
         lib: {
             entry: 'src/index.ts',
-            name: '@surendra/ui-components',
+            name: '@surendra9712/ui-components',
             fileName: (format) => `index.${format}.js`,
         },
         rollupOptions: {
