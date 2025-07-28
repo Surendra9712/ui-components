@@ -1,9 +1,9 @@
 import React from 'react';
-import {Input as AntInput, InputProps} from 'antd';
+import {Input as AntdInput, InputProps} from 'antd';
 
 export const Input = ({...props}: InputProps) => {
     return (
-        <AntInput
+        <AntdInput
             {...props}
         />
     );

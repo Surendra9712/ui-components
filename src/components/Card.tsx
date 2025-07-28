@@ -1,6 +1,6 @@
-import { Card as AntCard} from "antd";
+import { Card as AntdCard} from "antd";
 import { CardProps } from "antd/es/card";
 
 export const Card = ({children, ...props }: CardProps) => {
-    return <AntCard {...props}>{children}</AntCard>;
+    return <AntdCard {...props}>{children}</AntdCard>;
 };

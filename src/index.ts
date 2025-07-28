@@ -7,6 +7,7 @@ export { Textarea } from './components/Textarea';
 export { Card } from './components/Card';
 export { DatePicker } from './components/DatePicker';
 export { Select } from './components/Select';
+export { Table } from './components/Table';
 
 // Hooks
 export { useFormHandler } from './hooks/useFormHandler';
