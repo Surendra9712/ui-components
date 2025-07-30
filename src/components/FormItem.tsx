@@ -1,28 +1,25 @@
-import React from 'react';
-import {Form} from 'antd';
+"use client"
+import React, {ReactNode} from 'react';
 import {useFormContext} from '../provider/Form';
-import FormItem from "antd/es/form/FormItem";
 
-interface FormItemProps extends React.ComponentProps<typeof FormItem> {
-    name: string;
-    showError?: boolean;
+interface FormItemProps {
+    children: ReactNode,
+    name?: string,
+    label?: string,
 }
 
-export const MyFormItem = ({
-                               name,
-                               showError = true,
-                               ...props
-                           }: FormItemProps) => {
-    const {formErrors, touchedFields} = useFormContext();
-    const error = touchedFields[name] ? formErrors[name] : '';
-
+export const FormItem = ({
+                             name,
+                             label,
+                             children,
+                         }: FormItemProps) => {
+    const {formErrors} = useFormContext();
+    const error = (formErrors && name) ? formErrors[name] : '';
     return (
-        <Form.Item
-            name={name}
-            validateStatus={error ? 'error' : ''}
-            help={showError && error ? error : ''}
-            {...props}
-        >
-        </Form.Item>
+        <div className={`ui-form-item ${error ? "error" : ""}`}>
+            {label && <label>{label}</label>}
+            {children}
+            {error && <span className="error-message">{error}</span>}
+        </div>
     );
 };

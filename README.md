@@ -16,26 +16,11 @@ Reusable and customizable React UI components built with [Ant Design](https://an
 ## Installation
 
 ```bash
-npm install @surendra9712/ui-components --registry=https://npm.pkg.github.com
+npm install @surendra9712/ui-components
 # or
-npm install @surendra9712/ui-components --registry=https://npm.pkg.github.com
+npm install @surendra9712/ui-components
 ```
----
 
-## Authentication Setup
-GitHub Packages require a GitHub Personal Access Token (PAT) with read:packages scope to install.
-
-Option 1: Use a .npmrc file in your project root
-Create a .npmrc file (or add to it):
-
-<pre><code>.npmrc @surendra9712:registry=https://npm.pkg.github.com/ //npm.pkg.github.com/:_authToken=${NPM_TOKEN} </code></pre>
-💡 Replace ${NPM_TOKEN} with your GitHub Personal Access Token (PAT) or set it as an environment variable (recommended).
-
-Important:
-
-Do not commit your .npmrc file if it contains a raw token.
-
-Add .npmrc to .gitignore to avoid leaking secrets.
 ---
 
 ## Usage
@@ -79,7 +64,7 @@ A styled Ant Design button.
 Context-aware form wrapper.
 
 ```tsx
-<Form formErrors={errors} touchedFields={touched} handleBlur={handleBlur}>
+<Form formErrors={errors}>
     {/* Form Items go here */}
 </Form>
 ```
@@ -88,7 +73,7 @@ Context-aware form wrapper.
 
 ## `FormItem`
 
-Custom wrapper around Ant Design `Form.Item` with validation message support.
+Custom wrapper around Ant Design `FormItem` with validation message support.
 
 ```tsx
 <FormItem name="email" label="Email">

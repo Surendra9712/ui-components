@@ -1,0 +1,28 @@
+:root {
+    --ui-danger: #fb2c36;
+    --ui-border-danger: #ffa2a2;
+    --ui-danger-100: #ffe2e2;
+}
+
+.ui-form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+
+    &.error .ant-input, &.error .ant-picker-outlined, &.error .ant-select-selector {
+        border-color: var(--ui-border-danger);
+
+        &:focus {
+            box-shadow: 0 0 0 2px var(--ui-danger-100);
+        }
+    }
+}
+
+.ui-form-item .error-message {
+    position: absolute;
+    bottom: -2px;
+    color: var(--ui-danger);
+    font-size: 0.75rem;
+}
