@@ -41,7 +41,7 @@ import {
   DatePicker,
   useFormHandler,
   validators
-} from 'surendra-ui-components';
+} from '@surendra9712/ui-components';
 ```
 
 
@@ -252,7 +252,6 @@ tsc
 ## Example
 
 ```tsx
-import React from 'react';
 import {
   Form,
   FormItem,
@@ -260,7 +259,7 @@ import {
   Button,
   useFormHandler,
   validators
-} from 'surendra-ui-components';
+} from '@surendra9712/ui-components';
 
 const initialState = { email: '', password: '' };
 
@@ -286,7 +285,7 @@ const LoginForm = () => {
   };
 
   return (
-    <Form formErrors={errors} touchedFields={touched} handleBlur={handleBlur}>
+    <Form formErrors={errors}>
       <FormItem name="email" label="Email">
         <Input
           value={formData.email}
