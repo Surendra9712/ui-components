@@ -11,7 +11,7 @@
     padding-bottom: 1rem;
     position: relative;
 
-    &.error .ant-input, &.error .ant-picker-outlined, &.error .ant-select-selector {
+    &.error .ant-input, &.error .ant-picker-outlined, &.error .ant-select-outlined .ant-select-selector {
         border-color: var(--ui-border-danger);
 
         &:focus {

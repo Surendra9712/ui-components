@@ -43,7 +43,11 @@ import {
   validators
 } from '@surendra9712/ui-components';
 ```
+Import the style file where you need
 
+```
+import "@surendra9712/ui-components/dist/style.css";
+```
 
 ## Components
 
