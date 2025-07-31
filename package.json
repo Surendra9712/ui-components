@@ -1,7 +1,7 @@
 {
   "name": "@surendra9712/ui-components",
   "author": "Surendra Rawal",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
   "description": "Reusable UI components built with React and Ant Design",
   "main": "./dist/index.umd.js",
@@ -32,7 +32,7 @@
     "typescript": "^5.0.4",
     "vite": "^5.2.8"
   },
-  "keywords": ["surendra","surendra npm","react", "ui", "ui-components","surendra-ui-components"],
+  "keywords": ["surendra","surendra npm","@surendra9712/ui-components", "ui", "ui-components","surendra-ui-components"],
   "repository": {
     "type": "git",
     "url": "https://github.com/Surendra9712/ui-components"
